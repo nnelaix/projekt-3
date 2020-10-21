@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .container {
@@ -15,40 +15,20 @@ section {
   font-weight: regular;
 }
 
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-}
-
-.box {
-  -ms-flex: 0 0 33.333%;
-      flex: 0 0 33.333%;
-  border: 2px solid #ffffff;
-}
-
-.box p:first-of-type {
-  font-family: "Georgia", sans-serif;
-  color: #000000;
-}
-
 /* navigation bar */
 .navigation {
   background-color: transparent;
-  padding: 12px 0 12px;
+  display: inline-block;
+  position: absolute;
 }
 
 .navigation a {
   text-decoration: none;
-  color: #ffffff;
+  color: black;
 }
 
 .navigation a:hover {
-  color: #000000;
+  color: gold;
 }
 
 .navigation ul {
@@ -65,6 +45,7 @@ section {
   display: inline-block;
   margin-right: 30px;
   position: relative;
+  color: black;
 }
 
 .navigation ul ul li {
@@ -84,13 +65,13 @@ section {
 }
 
 .navigation li:hover ul a {
-  color: #000000;
+  color: black;
   display: block;
   padding: 0 24px;
 }
 
 .navigation li:hover ul a:hover {
-  color: #000000;
+  color: #f6b93b;
 }
 
 /* header */
@@ -101,9 +82,12 @@ section {
   background-repeat: no-repeat;
   background-size: auto;
   font-family: "Roboto", sans-serif;
-  min-height: 400px;
+  min-height: 800px;
+  max-width: 1500px;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px;
+  margin: 0px;
 }
 
 .splash-inner {
@@ -113,7 +97,7 @@ section {
 
 h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 48px;
   font-family: "Pacifico", sans-serif;
   font-style: italic;
   word-spacing: 3px;
@@ -123,21 +107,31 @@ h1 {
 
 h2 {
   margin: 20px 0;
+  padding: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 72px;
   font-weight: 700;
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+}
+
 .btn {
   display: -ms-flexbox;
   display: flex;
-  max-width: 180px;
+  max-width: 200px;
   margin: 24px auto 0 auto;
-  padding: 16px;
+  padding: 10px 30px;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -185,18 +179,22 @@ h2 {
   font-weight: regular;
   font-size: 14px;
   color: #6d6d6d;
-  padding-top: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.box h5 {
   text-align: center;
 }
 
 /* service */
 .main-title {
-  padding-bottom: 15px;
+  font-size: xxx-large;
+  color: black;
+  font-family: "Georgia", sans-serif;
+  font-weight: bold;
   text-align: center;
-}
-
-h4 {
-  text-align: center;
+  padding-bottom: 10px;
 }
 
 .under-title {
@@ -207,11 +205,18 @@ h4 {
   color: #6d6d6d;
 }
 
+.services i {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 .service-icon {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: around;
-      justify-content: around;
+  -ms-flex-align: start;
+      align-items: flex-start;
   text-align: center;
   color: #f6b93b;
   font-size: 36px;
@@ -256,6 +261,11 @@ footer li {
   height: 40px;
   width: 40px;
   color: #000000;
-  text-align: center;
+  text-align: left;
+}
+
+/* portfolio */
+.portfolio {
+  background-color: grey;
 }
 /*# sourceMappingURL=style.css.map */
